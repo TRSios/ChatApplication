@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.chat-application {
+    width: 1440px;
+    height: 975px;
+    background-color: var(--chatApplicationBnd);
+}
+
+.bound {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 32px 0 22px;
+    background-color: var(--headerBnd);
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar a {
+    margin: 0 6px 0 6px;
+    padding: 23px 6px 21px 6px;
+    text-decoration: none;
+    font-family: "Avenir Roman";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: var(--white);
+    transition: border-bottom .6s ease;
+}
+
+.active-nav-bar {
+    border-bottom: 2px solid var(--lightGreen);
+}
+
+.workspaces {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 12px 0 12px;
+    padding-top: 2px;
+    width: 32px;
+    height: 32px;
+    border: solid 1px rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.icon .icon-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -4px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-family: "Avenir Roman";
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    background-color: var(--lightGreen);
+}
+
+.failure-icon-badge {
+    background-color: #E62C2C !important;
+}
+
+.workspaces .user {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.user span {
+    margin: 23px 0 21px 0;
+    font-family: "Avenir Roman";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+.user img {
+    margin-left: 15px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.ruler {
+    position: absolute;
+    width: 1057px;
+    height: 100px;
+    background-color: red;
+    z-index: 100;
+}

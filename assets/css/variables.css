@@ -1,0 +1,12 @@
+:root {
+    --mainFont: "Avenir Roman", normal;
+    --chatApplicationBnd: #282E36;
+    --headerBnd: #171B20;
+    --white: #FFFFFF;
+    --lightGreen: #24CF5F;
+}
+
+@font-face {
+    font-family: "Avenir Roman";
+    src: url("../fonts/AvenirLTStd-Roman.otf");
+}
