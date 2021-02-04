@@ -2,11 +2,17 @@
     --mainFont: "Avenir Roman", normal;
     --chatApplicationBnd: #282E36;
     --headerBnd: #171B20;
-    --white: #FFFFFF;
+    --lightBlue: #1B76ED;
+    --blue: #2473DA;
+    --lightGreen: #24CF5F;
+    --green: #25C14A;
     --lightGrey: #80878F;
     --grey: #797F86;
     --darkGrey: #5F6773;
-    --lightGreen: #24CF5F;
+    --lightRed: #FF4646;
+    --red: #E62C2C;
+    --darkRed: #C92020;
+    --white: #FFFFFF;
 }
 
 @font-face {
