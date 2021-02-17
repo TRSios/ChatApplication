@@ -236,7 +236,15 @@ body {
     height: 8px;
     border: 2px solid var(--chatApplicationBnd);
     border-radius: 50%;
+    background-color: var(--white);
+}
+
+.user-status.active {
     background-color: var(--green);
+}
+
+.user-status.inactive {
+    background-color: var(--lightRed);
 }
 
 .avatar img {
