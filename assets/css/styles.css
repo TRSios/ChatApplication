@@ -25,8 +25,8 @@ body {
 .bound {
     display: flex;
     justify-content: space-between;
-    height: 64px;
     padding: 0 32px 0 22px;
+    height: 64px;
     background-color: var(--headerBnd);
 }
 
@@ -310,7 +310,72 @@ body {
 }
 
 .container .profile {
+    font-family: "Avenir Roman";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: var(--white);
     background-color: rgba(25, 29, 33, .9);
+    opacity: .9;
+}
+
+.profile .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    height: 181px;
+    background-color: #14171A;
+}
+
+.card img {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+}
+
+.card div span {
+    display: block;
+    text-align: center;
+}
+
+.card div span:last-of-type {
+    margin-top: 5px;
+    color: var(--lightGrey);
+}
+
+.profile .summary {
+    display: flex;
+    justify-content: center;
+}
+
+.profile .info-block {
+    padding-top: 22px;
+    width: 173px;
+    box-shadow: inset 0 -1px 0 0 rgba(90, 95, 101, .5);
+}
+
+.info-block .field {
+    margin-bottom: 22px;
+}
+
+.info-block .show {
+    display: block;
+    margin-bottom: 22px;
+    color: var(--green);
+}
+
+.field span {
+    display: block;
+}
+
+.field span:first-of-type {
+    margin-bottom: 4px;
+    color: var(--grey);
 }
 
 .container .chat {

@@ -57,5 +57,13 @@ for (let i = 0; i < threads.length; i++) {
         const currentActive = document.getElementsByClassName('active-thread');
         currentActive[0].className = currentActive[0].className.replace(' active-thread', '');
         this.className += ' active-thread';
+
+        const profile = document.querySelector('.profile');
+
+        if (this.innerText.includes('Rachel Curtis')) {
+            profile.className = profile.className.replace(' hidden', '');
+        } else if (!profile.className.includes('hidden')) {
+            profile.className += ' hidden';
+        }
     });
 }
