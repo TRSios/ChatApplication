@@ -378,8 +378,201 @@ body {
     color: var(--grey);
 }
 
+.info-block .show {
+    cursor: pointer;
+}
+
 .container .chat {
+    display: flex;
+    flex-direction: column;
+    font-family: "Avenir Roman";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: var(--black);
     background-color: #F3F4F7;
+}
+
+.chat .messages {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 24px 30px;
+    overflow: auto;
+}
+
+.messages .message {
+    display: flex;
+    margin-top: 24px;
+}
+
+.message-right {
+    justify-content: flex-end;
+}
+
+.messages .message-left .img-right {
+    visibility: hidden;
+}
+
+.messages .message-right .img-left {
+    visibility: hidden;
+}
+
+.message div {
+    margin: 0 10px;
+}
+
+.message .text {
+    display: block;
+    position: relative;
+    padding: 16px 32px;
+    max-width: 530px;
+    border-radius: 5px;
+    background-color: var(--white);
+    word-break: break-word;
+}
+
+.message .text-right {
+    color: var(--white);
+    background-color: var(--lightBlue);
+}
+
+.message-right .time {
+    text-align: right;
+}
+
+.message .download {
+    display: flex;
+    margin: 0;
+}
+
+.download .file {
+    margin-right: 16px;
+    width: 114px;
+    height: 84px;
+    border-radius: 5px;
+}
+
+.download .options {
+    margin: 0;
+    padding-top: 14px;
+}
+
+.download .options span {
+    display: block;
+}
+
+.options span + span {
+    margin-top: 4px;
+}
+
+.options .file-download {
+    color: var(--lightBlue);
+    cursor: pointer;
+}
+
+.download.download-right {
+    flex-direction: row-reverse;
+}
+
+.download.download-right .file {
+    margin: 0 0 0 16px;
+}
+
+.tri-left::before,
+.tri-right::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+}
+
+.tri-left::before {
+    left: -10px;
+    border-top-color: transparent;
+    border-right-color: var(--white);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.tri-right::after {
+    right: -10px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: var(--lightBlue);
+}
+
+.message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.message .time {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #939393;
+}
+
+.chat .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    padding: 0 29px 0 32px;
+    height: 62px;
+    box-shadow: inset 0 1px 0 0 rgba(173, 173, 173, .1);
+    background-color: var(--white);
+}
+
+.input i {
+    margin-right: 24px;
+    font-size: 22px;
+    color: rgba(25, 29, 33, .9);
+    cursor: pointer;
+}
+
+.input input {
+    padding: 0;
+    width: 450px;
+    border: none;
+    font-family: "Avenir Roman";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+.input input:focus::placeholder {
+    color: transparent;
+}
+
+.input input::placeholder {
+    color: var(--black);
+}
+
+.input span {
+    margin-left: auto;
+    color: var(--green);
+    cursor: pointer;
+}
+
+.input input[type='file'] {
+    display: none;
 }
 
 .ruler {

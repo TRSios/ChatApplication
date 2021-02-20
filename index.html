@@ -193,7 +193,7 @@
                                 <i class="fas fa-ellipsis-h"></i>
 
                                 <span>
-                                    18:00pm
+                                    5:00 PM
                                 </span>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                                 <i class="fas fa-ellipsis-h"></i>
 
                                 <span>
-                                    15:10pm
+                                    3:10 PM
                                 </span>
                             </div>
                         </div>
@@ -249,7 +249,7 @@
                                 <i class="fas fa-ellipsis-h"></i>
 
                                 <span>
-                                    14:20pm
+                                    2:20 PM
                                 </span>
                             </div>
                         </div>
@@ -277,7 +277,7 @@
                                 <i class="fas fa-ellipsis-h"></i>
 
                                 <span>
-                                    14:05pm
+                                    2:05 PM
                                 </span>
                             </div>
                         </div>
@@ -305,7 +305,7 @@
                                 <i class="fas fa-ellipsis-h"></i>
 
                                 <span>
-                                    13:10pm
+                                    1:10 PM
                                 </span>
                             </div>
                         </div>
@@ -333,7 +333,7 @@
                                 <i class="fas fa-ellipsis-h"></i>
 
                                 <span>
-                                    12:40pm
+                                    12:40 PM
                                 </span>
                             </div>
                         </div>
@@ -429,7 +429,22 @@
                 </div>
             </div>
 
-            <div class="chat"></div>
+            <div class="chat">
+                <div class="messages"></div>
+
+                <div class="input">
+                    <label for="file-attach">
+                        <i class="fas fa-paperclip"></i>
+                    </label>
+
+                    <input placeholder="Type your message...">
+                    <input id="file-attach" type="file" onchange="sendFile(event)">
+
+                    <span onclick="send(input.value, 'TEXT', true)">
+                        SEND
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 
